@@ -3,9 +3,9 @@
   "version": "1.1.4",
   "private": true,
   "author": {
-    "name": "Sanidhya Kumar Verma",
-    "email": "sanidhya.verma12345@gmail.com",
-    "url": "https://github.com/sanidhyy"
+    "name": "Biswabhusan Mohapatra",
+    "email": "biswabhusanmohapatra83@gmail.com",
+    "url": "https://github.com/IAmBiswabhusan/"
   },
   "description": "Modern 3D Portfolio using React, Three.js and Typescript",
   "keywords": [
@@ -23,21 +23,21 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sanidhyy/3d-portfolio.git"
+    "url": "https://github.com/IAmBiswabhusan/Portfolio"
   },
-  "homepage": "https://github.com/sanidhyy/3d-portfolio#readme",
+  "homepage": "https://github.com/IAmBiswabhusan/Portfolio#readme",
   "bugs": {
-    "url": "https://github.com/sanidhyy/3d-portfolio/issues",
-    "email": "sanidhya.verma12345@gmail.com"
+    "url": "https://github.com/IAmBiswabhusan/Portfolio/issues",
+    "email": "biswabhusanmohapatra83@gmail.com"
   },
   "funding": [
     {
-      "type": "patreon",
-      "url": "https://www.patreon.com/sanidhy"
+      "type": "X",
+      "url": "https://x.com/iAmBiswabhusan0/"
     },
     {
-      "type": "Buy me a coffee",
-      "url": "https://www.buymeacoffee.com/sanidhy"
+      "type": "LinkedIn",
+      "url": "https://www.linkedin.com/in/biswabhusanmohapatra"
     }
   ],
   "type": "module",
