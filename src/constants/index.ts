@@ -51,12 +51,12 @@ export const NAV_LINKS = [
   {
     id: "source-code",
     title: "Source Code",
-    link: "https://github.com/IAmBiswabhusan/Portfolio",
+    link: "https://github.com/IAmBiswabhusan/Biswa-Portfolio",
   },
   {
     id: "Resume",
     title: "Resume",
-    link: "https://tranquil-moxie-a837fe.netlify.app/",
+    link: "https://vercel.com/biswabhusans-projects/resume",
   },
 ] as const;
 
