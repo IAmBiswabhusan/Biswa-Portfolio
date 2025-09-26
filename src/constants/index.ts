@@ -46,7 +46,7 @@ import {
 // Navbar Links
 export const NAV_LINKS = [
   { id: "about", title: "About", link: null },
-  { id: "academics", title: "Academics", link: null }, // ✅ changed from work → academics
+  { id: "academics", title: "Academics", link: null }, 
   { id: "contact", title: "Contact", link: null },
   {
     id: "source-code",
@@ -56,16 +56,16 @@ export const NAV_LINKS = [
   {
     id: "Resume",
     title: "Resume",
-    link: "https://vercel.com/biswabhusans-projects/resume",
+    link: "https://resume-rho-azure.vercel.app/",
   },
 ] as const;
 
 // Services
 export const SERVICES = [
   { title: "Web Developer", icon: web },
-  { title: "React Native Developer", icon: mobile },
-  { title: "Backend Developer", icon: backend },
-  { title: "Content Creator", icon: creator },
+  { title: "Java Developer", icon: mobile },
+  { title: "ABAP Backend Developer", icon: backend },
+  { title: "Python Developer", icon: creator },
 ] as const;
 
 // Technologies
