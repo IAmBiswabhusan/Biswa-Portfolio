@@ -3,13 +3,11 @@ import { motion } from "framer-motion";
 import { useState, useRef, type FormEvent, type ChangeEvent } from "react";
 import { toast } from "sonner";
 
-
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { slideIn } from "../utils/motion";
 
-// Contact
 export const Contact = () => {
   const formRef = useRef<HTMLFormElement | null>(null);
   const [form, setForm] = useState({
@@ -19,7 +17,7 @@ export const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
-  // handle form change
+  // Handle input changes
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -27,50 +25,47 @@ export const Contact = () => {
     setForm({ ...form, [name]: value });
   };
 
-  // validate form on submit
+  // Validate form
   const validateForm = () => {
     const { name, email, message } = form;
 
-    type Current = { name: boolean; email: boolean; message: boolean };
     const nameError = document.querySelector("#name-error")!;
     const emailError = document.querySelector("#email-error")!;
     const messageError = document.querySelector("#message-error")!;
-    const current: Current = { name: false, email: false, message: false };
+
+    let isValid = true;
 
     if (name.trim().length < 3) {
       nameError.classList.remove("hidden");
-      current.name = false;
+      isValid = false;
     } else {
       nameError.classList.add("hidden");
-      current.name = true;
     }
 
-    const email_regex =
+    const emailRegex =
       /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-    if (!email.trim().toLowerCase().match(email_regex)) {
+    if (!email.trim().toLowerCase().match(emailRegex)) {
       emailError.classList.remove("hidden");
-      current.email = false;
+      isValid = false;
     } else {
       emailError.classList.add("hidden");
-      current.email = true;
     }
 
     if (message.trim().length < 5) {
       messageError.classList.remove("hidden");
-      current.message = false;
+      isValid = false;
     } else {
       messageError.classList.add("hidden");
-      current.message = true;
     }
 
-    return Object.values(current).every(Boolean);
+    return isValid;
   };
 
-  // handle form submit
+  // Handle form submission
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (!validateForm()) return false;
+    if (!validateForm()) return;
 
     setLoading(true);
 
@@ -84,13 +79,13 @@ export const Contact = () => {
           to_name: "Biswabhusan",
           to_email: import.meta.env.VITE_APP_EMAILJS_RECIEVER,
           message: form.message,
-          reply_to: form.email.trim().toLowerCase(), // <-- added reply_to
+          reply_to: form.email.trim().toLowerCase(),
         },
         import.meta.env.VITE_APP_EMAILJS_KEY
       )
       .then(() => toast.success("Thanks for contacting me."))
       .catch((error) => {
-        console.log("[CONTACT_ERROR]: ", error);
+        console.error("[CONTACT_ERROR]: ", error);
         toast.error("Something went wrong.");
       })
       .finally(() => {
