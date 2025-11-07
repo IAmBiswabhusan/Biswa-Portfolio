@@ -90,7 +90,7 @@ export const ACADEMICS = [
     institution_name: "Puri Zilla School",
     icon: school,
     iconBg: "#383E56",
-    date: "Completed in 2017",
+    date: "Completed in 2019",
     points: [
       "Secured 77% in Matriculation.",
       "Completed 10th standard with strong foundation in Mathematics and Science.",
