@@ -207,7 +207,7 @@ export const PROJECTS = [
   image: project0, 
   source_code_link: "https://github.com/IAmBiswabhusan/E-COMMERCE-WEBSITE",
   live_site_link: "https://e-commerce-website-biswa.netlify.app/",
-}
+},
 
   
   {
