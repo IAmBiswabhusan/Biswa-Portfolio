@@ -83,6 +83,7 @@ export {
   college,
   university,
   research,
+  project0,
   project1,
   project2,
   project3,
