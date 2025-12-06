@@ -32,6 +32,7 @@ import college from "./Academics/college.jpg";
 import university from "./Academics/university.jpg";
 import research from "./Academics/research.jpg";
 
+
 import project0 from "./projects/project0.png";
 import project1 from "./projects/project1.png";
 import project2 from "./projects/project2.png";
