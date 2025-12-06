@@ -17,6 +17,7 @@ import {
   tailwind,
   git,
   figma,
+  project0,
   project1,
   project2,
   project3,
@@ -193,6 +194,22 @@ export const EXPERIENCES = [
 
 // Projects
 export const PROJECTS = [
+  {
+  name: "E-Commerce Website",
+  description:
+    "Built a fully functional and responsive e-commerce web application with dynamic product rendering, LocalStorage-based cart system, user authentication, and a modern UI inspired by real-world platforms like Amazon and Flipkart.",
+  tags: [
+    { name: "Vite", color: "blue-text-gradient" },
+    { name: "JavaScript", color: "green-text-gradient" },
+    { name: "HTML5", color: "pink-text-gradient" },
+    { name: "CSS3", color: "orange-text-gradient" },
+  ],
+  image: project0, 
+  source_code_link: "https://github.com/IAmBiswabhusan/E-COMMERCE-WEBSITE",
+  live_site_link: "https://e-commerce-website-biswa.netlify.app/",
+}
+
+  
   {
     name: "Netflix Clone",
     description:
