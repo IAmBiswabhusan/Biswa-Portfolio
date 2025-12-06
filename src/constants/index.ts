@@ -233,7 +233,7 @@ export const PROJECTS = [
       { name: "Three.js", color: "pink-text-gradient" },
     ],
     image: project2,
-    source_code_link: "https://github.com/IAmBiswabhusan/Portfolio",
+    source_code_link: "https://github.com/IAmBiswabhusan/Biswa-Portfolio",
     live_site_link: "#",
   },
   {
