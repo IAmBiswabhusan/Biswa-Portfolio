@@ -197,7 +197,7 @@ export const PROJECTS = [
 {
   name: "Bhusan Mart - React E-Commerce Website",
   description:
-    "Developed a modern and responsive React-based e-commerce application featuring product browsing, category and price filtering, shopping cart management, simulated user authentication, LocalStorage persistence, and a seamless checkout experience. Built using reusable components, Context API for global state management, React Router for navigation, Tailwind CSS for styling, and React Toastify for interactive notifications.",
+    "Built a responsive React-based e-commerce application with product filtering, shopping cart management, simulated authentication, LocalStorage persistence, and a seamless checkout experience using Context API and React Router.",
   tags: [
     { name: "React", color: "blue-text-gradient" },
     { name: "JavaScript", color: "purple-text-gradient" },
@@ -208,10 +208,7 @@ export const PROJECTS = [
   image: project7,
   source_code_link: "https://github.com/IAmBiswabhusan/E-COMMERCE-WEBSITE-React",
   live_site_link: "https://bhusan-mart.vercel.app/",
-},
-
-
-  
+},  
   {
   name: "E-Commerce Website",
   description:
