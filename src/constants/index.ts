@@ -24,6 +24,7 @@ import {
   project4,
   project5,
   project6,
+  project7,
   user1,
   user2,
   user3,
@@ -84,7 +85,6 @@ export const TECHNOLOGIES = [
   { name: "figma", icon: figma },
 ] as const;
 
-// ✅ Academic Journey (replaces EXPERIENCES)
 export const ACADEMICS = [
   {
     title: "10th Standard",
@@ -128,7 +128,7 @@ export const ACADEMICS = [
     iconBg: "#E6DEDD",
     date: "2024 - Present",
     points: [
-      "Pursuing MCA with CGPA: 9.20 (till 2nd Semester).",
+      "Pursuing MCA with CGPA: 8.89",
       "Gaining expertise in full-stack development, software engineering, and AI/ML concepts.",
       "Working on academic projects and research-oriented problem solving.",
     ],
@@ -194,6 +194,24 @@ export const EXPERIENCES = [
 
 // Projects
 export const PROJECTS = [
+{
+  name: "Bhusan Mart - React E-Commerce Website",
+  description:
+    "Developed a modern and responsive React-based e-commerce application featuring product browsing, category and price filtering, shopping cart management, simulated user authentication, LocalStorage persistence, and a seamless checkout experience. Built using reusable components, Context API for global state management, React Router for navigation, Tailwind CSS for styling, and React Toastify for interactive notifications.",
+  tags: [
+    { name: "React", color: "blue-text-gradient" },
+    { name: "JavaScript", color: "purple-text-gradient" },
+    { name: "Vite", color: "green-text-gradient" },
+    { name: "Context API", color: "pink-text-gradient" },
+    { name: "Tailwind CSS", color: "orange-text-gradient" },
+  ],
+  image: project7,
+  source_code_link: "https://github.com/IAmBiswabhusan/E-COMMERCE-WEBSITE-React",
+  live_site_link: "https://bhusan-mart.vercel.app/",
+},
+
+
+  
   {
   name: "E-Commerce Website",
   description:
